@@ -1,0 +1,429 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ 
+body {
+	width: 100%;
+	height: 100%;
+	color:#333;
+	background: #fff;
+	font-size:0.94em;
+	line-height:135%;
+}
+
+a {
+	text-decoration: none;
+	color: #fdc20f;
+	font-family: GothaProLig;
+	font-size: 17;
+}
+
+ul {
+ list-style:none;
+}
+
+.table{
+	margin-top: 40px;
+	width: 1300;
+	height: 100%;
+}
+
+@font-face {
+    font-family: BebasNeue Bold;
+    src: url(fonts/BebasNeue Bold.otf);
+   }
+@font-face {
+    font-family: BebasNeue Book;
+    src: url(fonts/BebasNeue Book.otf);
+   }
+@font-face {
+    font-family: BebasNeue Light;
+    src: url(fonts/BebasNeue Light.otf);
+   }
+@font-face {
+    font-family: BebasNeue Regular;
+    src: url(fonts/BebasNeue Regular.otf);
+   }
+@font-face {
+    font-family: BebasNeue Thin;
+    src: url(fonts/BebasNeue Thin.otf);
+   }
+@font-face {
+    font-family: GothaProLig;
+    src: url(fonts/GothaProLig.otf);
+   }
+@font-face {
+    font-family: GothaProReg;
+    src: url(fonts/GothaProReg.otf);
+   }
+@font-face {
+    font-family: Ubuntu Light;
+    src: url(fonts/Ubuntu Light.ttf);
+   }
+@font-face {
+    font-family: Ubuntu Medium;
+    src: url(fonts/Ubuntu Medium.ttf);
+   }
+
+/*---------------------------------------
+HEADER
+----------------------------------------*/
+
+.logo{
+	display: inline-block;
+	padding-right: 50px;
+	margin-bottom: 20px;
+}
+
+.info{
+	vertical-align: top;
+	display: inline-block;
+	border-right: 1px solid #fdc20f;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: GothaProLig;
+	font-size: 17;
+}
+
+.info a{
+	border-bottom: 1px solid #fee9be;
+}
+
+.info a:hover{
+	border-bottom: 1px solid #fdc20f;
+}
+
+.number{
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 15px;
+	font-family: BebasNeue;
+	font-size: 25;
+}
+
+.backCall {
+	vertical-align: top;
+	display: inline-block;
+	margin-top: 15px;
+}
+
+.backCall a{
+	border-radius: 3px;
+	background: #f4bb0e;
+	font-weight:600;
+	color:#000;
+	padding:6px 25px 9px 25px;
+	-moz-transition: all 0.3s 0.01s ease;
+	-o-transition: all 0.3s 0.01s ease;
+	-webkit-transition: all 0.3s 0.01s ease;
+	text-decoration:none;
+
+	font-family: BebasNeue Bold;
+	font-size: 25;
+}
+
+
+/*---------------------------------------
+TOP MENU
+----------------------------------------*/
+
+.menuLine {
+	position: absolute;
+	width: 100%;
+	background: #d7d7d7;
+	left: 0;
+	height: 57px;
+	z-index: -4;
+}
+
+.topMenu {
+	height:57px;
+	font-family: GothaProReg;
+	font-size: 17;
+ }
+ 
+.topMenu ul li {
+ 	float:left;
+ }
+ 
+.topMenu ul {
+	padding-left:0px;
+	display: inline-table;
+ }
+ 
+.topMenu ul li a{
+ margin-top:0px;
+ font-weight:100;
+ border-left: 1px solid #d7d7d7;
+ border-right: 1px solid #d7d7d7;
+ display:block;
+ color:#000;
+ text-decoration:none;
+ line-height:20px;
+ font-size:18px;
+ padding:16px 20px 21px 20px;
+ }
+ 
+.topMenu ul li a:hover{
+ background: #d2d0d0;
+ color:#000000;
+ border-left: 1px solid #cac8c8;
+ border-right: 1px solid #e2e1e1;
+ }
+
+ /*---------------------------------------
+BRAND MENU
+----------------------------------------*/
+
+.brandMenu ul{
+  display: inline-table;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.brandMenu ul li {
+ 	float:left;
+ 	padding:0px 10px 0px 10px;
+ }
+
+.imgBrand {
+	border: 2px solid #e8e8e8;
+	border-radius: 47px 47px;
+}
+
+.imgBrand:hover{
+	border: 2px solid #fdc20f;
+}
+
+.buttonBrand {
+	— moz-transition: all 0.5s ease;
+	— webkit-transition: all 0.5s ease;
+	— o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.buttonBrand:hover {
+	-moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+ /*---------------------------------------
+REVIEW
+----------------------------------------*/
+
+.line {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #fdc20f;
+	margin-top: -30px;
+}
+
+.reviewTitle {
+	position: absolute;
+	margin-top: -65px;
+	background: #fff;
+	padding: 10px;
+	font-family: BebasNeue;
+	font-size: 40;
+}
+
+.review {
+	padding-top: 30px;
+	vertical-align: top;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+.article {
+	vertical-align: top;
+	width: 580px;
+	height: 0 auto;
+	margin-top: 40px;
+	display: inline-block;
+}
+
+.postThumb {
+	float: left;
+}
+
+ .textPreview{
+ 	display: inline-block;
+ 	text-align: left;
+ 	width: 320px;
+ 	margin-left: 20px;
+ 	margin-right: 20px;
+ }
+
+ .textPreview a{
+	border-bottom: 1px solid #fee9be;
+}
+
+ .textPreview a:hover{
+	border-bottom: 1px solid #fdc20f;
+}
+
+.textPreview b{
+	font-family: BebasNeue;
+	font-size: 25;
+}
+
+.textPreview p{
+	font-family: GothaProLig;
+	font-size: 17;
+}
+
+
+  /*---------------------------------------
+NEWS
+----------------------------------------*/
+
+ .news {
+	padding-top: 30px;
+	padding-bottom: 40px;
+	vertical-align: top;
+	text-align: center;
+}
+
+.lineNews {
+	position: absolute;
+	left: 0;
+	width: 50%;
+	height: 1px;
+	background: #fdc20f;
+	margin-top: -30px;
+}
+
+.newsTitle {
+	width: 1100px;
+	position: absolute;
+	margin-top: -70px;
+	background: #fff;
+	text-align: right;
+	padding: 10px;
+	font-family: BebasNeue Light;
+	font-size: 40;
+}
+
+  /*---------------------------------------
+BOTTOM MENU
+----------------------------------------*/
+
+.bottomMenuLine {
+	position: absolute;
+	width: 100%;
+	background: #6e6d6d;
+	left: 0;
+	height: 57px;
+	z-index: -4;
+}
+
+.bottomMenu {
+	font-family: GothaProReg;
+	font-size: 17;
+}
+
+.bottomMenu ul li {
+ 	float:left;
+ }
+ 
+.bottomMenu ul {
+	padding-left:0px;
+	display: inline-table;
+ }
+
+.bottomMenu ul li a{
+ margin-top:0px;
+ font-weight:100;
+ border-left: 1px solid #6e6d6d;
+ border-right: 1px solid #6e6d6d;
+ display:block;
+ color:#fff;
+ text-decoration:none;
+ line-height:20px;
+ font-size:18px;
+ padding:16px 20px 21px 20px;
+ }
+ 
+.bottomMenu ul li a:hover{
+ background: #5e5e5e;
+ color:#fff;
+ border-left: 1px solid #535353;
+ border-right: 1px solid #767676;
+ }
+
+   /*---------------------------------------
+BOTTOM
+----------------------------------------*/
+
+.bottomLine {
+	position: absolute;
+	width: 100%;
+	background: #515151;
+	left: 0;
+	margin-top: -50;
+	height: 300px;
+	z-index: -4;
+}
+
+.bottomTable {
+	height: 200px;
+	color: #fff;
+	text-align: center;
+}
+
+.infoBottom {
+	display: inline-block;
+	border-right: 1px solid #fff;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: left;
+	font-family: GothaProLig;
+	font-size: 17;
+}
+
+.infoConnect {
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: left;
+	font-family: GothaProLig;
+	font-size: 17;
+}
+
+.infoNoAferta {
+	display: inline-block;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: left;
+	width: 680px;
+	font-size: 10;
+	font-family: GothaProLig;
+	font-size: 10px;
+}
+
+.infoCode {
+	display: inline-block;
+	margin-top: 10px;
+	width: 200;
+	font-size: 12px;
+}
+
+.infoCode p{
+	font-family: Ubuntu Light;
+	margin-top: 10px;
+	color: #ff6d14;
+}
+
+.img{
+	float: left;
+}
