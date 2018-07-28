@@ -276,14 +276,14 @@ REVIEW
 	margin-top: -65px;
 	background: #fff;
 	padding: 10px;
-	font-family: BebasNeue;
+	font-family: BebasNeue Bold;
 	font-size: 40;
 }
 
 .review {
 	padding-top: 30px;
 	vertical-align: top;
-	padding-bottom: 40px;
+	padding-bottom: 100px;
 	text-align: center;
 }
 
@@ -316,7 +316,7 @@ REVIEW
 }
 
 .textPreview b{
-	font-family: BebasNeue;
+	font-family: BebasNeue Bold;
 	font-size: 25;
 }
 
@@ -336,7 +336,7 @@ NEWS
 
  .news {
 	padding-top: 30px;
-	padding-bottom: 40px;
+	padding-bottom: 100px;
 	vertical-align: top;
 	text-align: center;
 }
@@ -351,14 +351,31 @@ NEWS
 }
 
 .newsTitle {
-	width: 1100px;
+	width: 1200px;
 	position: absolute;
 	margin-top: -70px;
 	background: #fff;
-	text-align: right;
 	padding: 10px;
-	font-family: BebasNeue Light;
+	font-family: BebasNeue Bold;
 	font-size: 40;
+}
+
+.moreNews {
+	font-family: GothaProLig;
+	font-size: 20;
+	float: right;
+	margin-top: -20px;
+	margin-right: 10px;
+	border-bottom: 1px solid #fee9be;
+}
+
+.moreNews:hover{
+	border-bottom: 1px solid #fdc20f;
+}
+
+.arrow{
+	float: right;
+	margin-top: -15px;
 }
 
   /*---------------------------------------
@@ -447,13 +464,17 @@ BOTTOM
 	font-size: 17;
 }
 
-.infoConnect {
+.infoConnect, .infoConnect2{
 	display: inline-block;
 	padding-left: 20px;
 	padding-right: 20px;
 	text-align: left;
 	font-family: GothaProLig;
 	font-size: 17;
+}
+
+.infoConnect{
+	width: 220px;
 }
 
 .infoNoAferta {
@@ -483,6 +504,11 @@ BOTTOM
 
 .img{
 	float: left;
+}
+
+.phone {
+	float: left;
+	margin-right: 10px;
 }
 
 
