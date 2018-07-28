@@ -135,6 +135,7 @@ TOP MENU
 
 .menuLine {
 	position: absolute;
+	min-width: 1300px;
 	width: 100%;
 	background: #d7d7d7;
 	left: 0;
@@ -326,6 +327,7 @@ BOTTOM MENU
 
 .bottomMenuLine {
 	position: absolute;
+	min-width: 1300px;
 	width: 100%;
 	background: #6e6d6d;
 	left: 0;
@@ -373,6 +375,7 @@ BOTTOM
 
 .bottomLine {
 	position: absolute;
+	min-width: 1300px;
 	width: 100%;
 	background: #515151;
 	left: 0;
@@ -421,13 +424,13 @@ BOTTOM
 .infoCode {
 	display: inline-block;
 	margin-top: 10px;
-	width: 200;
 	font-size: 12px;
 }
 
 .infoCode p{
 	font-family: Ubuntu Light;
 	margin-top: 10px;
+	width: 230;
 	color: #ff6d14;
 }
 
