@@ -190,39 +190,71 @@ TOP MENU
 BRAND MENU
 ----------------------------------------*/
 
-.brandMenu ul{
-  display: inline-table;
-  margin-top: 40px;
-  margin-bottom: 40px;
+.brandMenu {
+	padding: 40px;
 }
 
-.brandMenu ul li {
- 	float:left;
- 	padding:0px 10px 0px 10px;
- }
+body .slider {
+	overflow:hidden; /* Скрываем всё что за блоком слайдера */
+	position:relative;
+	width:1115px;
+	height:98px;
+	margin:0 auto;
+}
+	
+body .slider .slides {
+	position:relative;
+	transition:1s; /* Задаем время изменения блока, отвечает за плавную прокрутку */
+}
+		
+body .slider .slides .slide {
+	float:left;
+	display:block;
+}
+			
+
+			
+body .slider .next {
+	position:absolute;
+	height:100px;
+	width:100px;
+	background:#fff;
+	right:0;
+	z-index:100;
+	cursor:pointer;
+}
+		
+body .slider .prev {
+	position:absolute;
+	height:100px;
+	width:100px;
+	background:#fff;
+	left:0;
+	z-index:100;
+	cursor:pointer;
+}
+
+.brandButton {
+	-moz-transition: all 0.5s ease-out;
+ -o-transition: all 0.5s ease-out;
+ -webkit-transition: all 0.5s ease-out;
+}
+
+.brandButton:hover {
+-webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);
+}
 
 .imgBrand {
 	border: 2px solid #e8e8e8;
 	border-radius: 47px 47px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .imgBrand:hover{
 	border: 2px solid #fdc20f;
-}
-
-.buttonBrand {
-	— moz-transition: all 0.5s ease;
-	— webkit-transition: all 0.5s ease;
-	— o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-}
-
-.buttonBrand:hover {
-	-moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
 }
 
 
