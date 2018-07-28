@@ -9,7 +9,6 @@ body {
 	color:#333;
 	background: #fff;
 	font-size:0.94em;
-	line-height:135%;
 }
 
 a {
@@ -123,6 +122,10 @@ HEADER
 
 	font-family: BebasNeue Bold;
 	font-size: 25;
+}
+
+.backCall a:hover{
+	color: #fee9be;
 }
 
 
@@ -281,6 +284,10 @@ REVIEW
 	font-size: 17;
 }
 
+.reviewDate {
+	color: #b0b0b0;
+}
+
 
   /*---------------------------------------
 NEWS
@@ -426,4 +433,141 @@ BOTTOM
 
 .img{
 	float: left;
+}
+
+
+   /*---------------------------------------
+CALL BACK FORM
+----------------------------------------*/
+
+.modal {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 10000;
+
+opacity: 0;
+pointer-events: none;
+}
+
+.modal:target {
+opacity: 1;
+pointer-events: auto;
+}
+
+.modal > div {
+width: 300px;
+background: #ffffff;
+position: relative;
+margin: 10% auto;
+
+-webkit-animation: minimise 500ms linear;
+
+padding: 30px;
+-webkit-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+-moz-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+}
+
+.modal:target > div {
+-webkit-animation-name: bounce;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+   -webkit-transform: scale3d(0.1,0.1,1);
+   -webkit-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+  }
+  55% {
+   -webkit-transform: scale3d(1.08,1.08,1);
+   -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0);
+  }
+  75% {
+   -webkit-transform: scale3d(0.95,0.95,1);
+   -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.9);
+  }
+  100% {
+   -webkit-transform: scale3d(1,1,1);
+   -webkit-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+  }
+}
+
+@-webkit-keyframes minimise {
+  0% {
+   -webkit-transform: scale3d(1,1,1);
+  }
+  100% {
+   -webkit-transform: scale3d(0.1,0.1,1);
+  }
+}
+
+.modal a[href="#close"] {
+position: absolute;
+right: 0;
+top: 0;
+color: transparent;
+}
+
+.modal a[href="#close"]:focus {
+outline: none;
+}
+
+.modal a[href="#close"]:after {
+content: 'X';
+display: block;
+font-size: 20px;
+position: absolute;
+right: 0px;
+top: 0px;
+width: 20px;
+height: 20px;
+text-align: center;
+color: #000;
+}
+
+.modal a[href="#close"]:hover:after {
+background-color: #fff;
+}
+
+.modal a[href="#close"]:focus:after {
+outline: 0px solid #000;
+}
+
+.modal .modal_title {
+  display: block;
+  text-align: center;
+  font-size: 22pt;
+}
+
+.inputBox {
+  font-size: 20px;
+}
+
+.button {
+  margin: 20px;
+  width: 250px;
+  height: 35px;
+  background-color: #fdc20f;
+  border: none;
+  font-size: 20px;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.form1 p{
+  margin: 20px;
+  font-size: 17px;
+}
+
+.topLineForm {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: -30px;
+  height: 20px;
+  width: 100%;
+  background-color: #d7d7d7;
 }
