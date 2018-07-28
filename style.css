@@ -125,7 +125,7 @@ HEADER
 }
 
 .backCall a:hover{
-	color: #fee9be;
+	color: #fff;
 }
 
 
@@ -151,6 +151,11 @@ TOP MENU
  
 .topMenu ul li {
  	float:left;
+ 	
+ }
+
+ .needLine{
+ 	background: url(images/line.png) right no-repeat;
  }
  
 .topMenu ul {
@@ -161,8 +166,6 @@ TOP MENU
 .topMenu ul li a{
  margin-top:0px;
  font-weight:100;
- border-left: 1px solid #d7d7d7;
- border-right: 1px solid #d7d7d7;
  display:block;
  color:#000;
  text-decoration:none;
@@ -176,6 +179,11 @@ TOP MENU
  color:#000000;
  border-left: 1px solid #cac8c8;
  border-right: 1px solid #e2e1e1;
+ }
+
+.topMenu ul li:hover{
+ 	margin-left: -1px;
+ 	margin-right: -1px;
  }
 
  /*---------------------------------------
@@ -352,8 +360,6 @@ BOTTOM MENU
 .bottomMenu ul li a{
  margin-top:0px;
  font-weight:100;
- border-left: 1px solid #6e6d6d;
- border-right: 1px solid #6e6d6d;
  display:block;
  color:#fff;
  text-decoration:none;
@@ -361,12 +367,21 @@ BOTTOM MENU
  font-size:18px;
  padding:16px 20px 21px 20px;
  }
+
+.needLineBottom{
+	background: url(images/lineBottom.png) right no-repeat;
+}
  
 .bottomMenu ul li a:hover{
  background: #5e5e5e;
  color:#fff;
- border-left: 1px solid #535353;
- border-right: 1px solid #767676;
+ border-left: 2px solid #535353;
+ border-right: 2px solid #767676;
+ }
+
+.bottomMenu ul li:hover{
+ 	margin-left: -2px;
+ 	margin-right: -2px;
  }
 
    /*---------------------------------------
